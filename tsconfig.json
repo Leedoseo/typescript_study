@@ -6,10 +6,12 @@
     "module": "esnext", // 변환될 JavaScript의 모듈 시스템 지정
     "outDir": "dist", // 생성될 js파일이 위치할 곳 지정
     "strict": true, // true: 엄격한 코드 타입 검사, false: 유연한 코드 타입 검사
-    "moduleDetection": "force" // 모든 파일을 모듈로 인식하도록 강제 지정
+    "strictNullChecks": false, // 엄격한 null 검사 -> null타입이 아닌 타입에 null을 넣어도 되게 허가할 것인지
+    "moduleDetection": "force", // 모든 파일을 모듈로 인식하도록 강제 지정
   },
   "ts-node": { // ts-node 실행 시 ESM 모듈 방식으로 동작하도록 설정
     "esm": true
   },
-  "include": ["section1/src"] // TypeScript 컴파일 대상 폴더 지정
+  "include": ["section*/**/*"] // section1~section10 폴더 컴파일 대상 지정
+  
 }
