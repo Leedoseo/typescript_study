@@ -27,3 +27,9 @@ const users: [string, number][] = [
   // [5, "최도서"] -> string과 number의 위치가 틀림 -> 오류 발생
   // 순서를 지키는게 중요할 때 튜플을 사용해서 값을 잘못 넣는 것을 방지!
 ];
+
+
+let doubleArr2: (number | string)[][] = [
+	[1, 2, 3],
+	["hi", 4],
+];

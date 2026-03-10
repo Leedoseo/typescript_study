@@ -13,10 +13,11 @@ unknownVar = "";
 unknownVar = 1;
 unknownVar = () => { };
 // num = unknownVar 이건 안됨.
-if (typeof unknownVar === 'number') {
+if (typeof unknownVar === "number") {
     // unknownVar가 넘버 타입임을 확실히 밝혀주었을 때는 unknown타입의 변수를 number 타입으로 정제해서 사용할 수는 있음
     // => 타입 정제라고 함.
     num = unknownVar;
 }
 export {};
 // any타입보단 unknown타입을 좀 더 사용함.
+// `any`는 타입 검사를 비활성화하지만, `unknown`은 더 안전해서 다른 타입에 할당하거나 사용하려면 명시적인 타입 확인 과정이 필요.
